@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPSC ADDA</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="menu-list">
+          <div><a href="../home page/index.html" id="home">Home</a></div>
+          <div>
+            <a href="../study material/index.html" id="study-material">Study Material</a>
+          </div>
+          <div>
+            <a href="../videos/index.html" id="video-lectures">Video Lectures</a>
+          </div>
+          <div>
+            <a href="./index.html" id="mock-tests">Tests</a>
+          </div>
+          <ldiv>
+            <a href="../about page/index.html" id="about-us">About Us</a>
+          </ldiv>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="timer" style="display: none">
+        <span>Time elapsed: <span id="time-display">00:00</span></span>
+      </div>
+      <div id="quiz-container">
+        <div id="question-cards"></div>
+        <div id="start-button">Let Start Quiz</div>
+      </div>
+      <div class="navigation-buttons">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+        <button id="submit-button">Submit</button>
+      </div>
+      <div id="result-card"></div>
+      <div class="subject-container" id="subject-container">
+        <div class="subject-card">
+          <h2>Polity</h2>
+          <button class="select-button" data-subject="polity">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>History</h2>
+          <button class="select-button" data-subject="history">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>Geography</h2>
+          <button class="select-button" data-subject="geography">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>Environment</h2>
+          <button class="select-button" data-subject="environment">
+            SELECT
+          </button>
+        </div>
+        <div class="subject-card">
+          <h2>Science and Technology</h2>
+          <button class="select-button" data-subject="science">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>Economy</h2>
+          <button class="select-button" data-subject="economy">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>International Relations</h2>
+          <button class="select-button" data-subject="international">
+            SELECT
+          </button>
+        </div>
+        <div class="subject-card">
+          <h2>Art and Culture</h2>
+          <button class="select-button" data-subject="art">SELECT</button>
+        </div>
+        <div class="subject-card">
+          <h2>CSAT</h2>
+          <button class="select-button" data-subject="csat">SELECT</button>
+        </div>
+      </div>
+      <div class="test-section" id="test-section" style="display: none">
+        <h2>Choose Length of Test</h2>
+        <div class="test-options">
+          <div class="test-option">
+            <h3>10 Questions</h3>
+            <p>Test your knowledge with a quick 10-question quiz.</p>
+            <button id="ten">Start Test</button>
+          </div>
+          <div class="test-option">
+            <h3>20 Questions</h3>
+            <p>Challenge yourself with a 20-question test.</p>
+            <button id="twenty">Start Test</button>
+          </div>
+          <div class="test-option">
+            <h3>50 Questions</h3>
+            <p>Dive deep with a comprehensive 50-question test.</p>
+            <button id="fifty">Start Test</button>
+          </div>
+          <div class="test-option">
+            <h3>Full Length Test</h3>
+            <p>Simulate the real exam with a full-length test.</p>
+            <button id="hundred">Start Test</button>
+          </div>
+        </div>
+      </div>
+      <button class="back-to-subjects" id="back-to-subjects">Back</button>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-link">
+          <div class="following">
+            <h2>Follow us on</h2>
+            <div class="social-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-discord"></i>
+            </div>
+          </div>
+          <div class="contact-bar">
+            <h2>Get in touch with us</h2>
+            <div class="contact-us">
+              <div class="number">
+                <i class="fa-solid fa-phone"></i>
+                <h4>+91-9999999999</h4>
+              </div>
+              <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <h4>support@upsc-adda.com</h4>
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <i class="fa-regular fa-building"></i>
+            <h4>
+              Flat No. ###, Block A, Sunrise Apartments, 15 MG Road,
+              Indiranagar, Bengaluru, Karnataka #####, India
+            </h4>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 UPSC ADDA Site. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

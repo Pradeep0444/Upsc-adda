@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+  color: #34495e;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ********Header Section ******** */
+header {
+  height: 5rem;
+  background: linear-gradient(135deg, #2980b9, #c13584, #6a0dad);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* ********Navigation Bar ******** */
+.nav-bar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* ********Navigation Bar list ******** */
+.menu-list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 8px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-list a:hover {
+background-color: #703f7f;
+}
+
+/* ********For profile icon ******** */
+.profile {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  background-color: rgb(169, 173, 177);
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.profile > img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ********For profile card ******** */
+.profile-list {
+  background: linear-gradient(135deg, #6a0dad, #c13584, #e2aaff);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  right: 10px; 
+  display: none; 
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  top: 75px;
+  z-index: 5;
+}
+
+.profile-list div {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-list div:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  color: #ffffff; 
+}
+
+.profile-details {
+  background: rgba(255, 255, 255, 0.2); 
+  color: #ffffff;
+}
+
+.logout {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.profile-list {
+  border: 1px solid #d1d1d1;
+}
+
+
+/* ***** Main Section **** */
+main {
+  min-height: calc(100vh - (5rem + 12rem));
+  position: relative;
+  background: linear-gradient(135deg, #6a0dad, #c13584, #e2aaff);
+  color: #2c3e50; 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ********Footer section ******** */
+footer {
+  height: 10rem;
+  color: #ecf0f1;
+  background-color: #34495e; 
+  background: linear-gradient(135deg, #e2aaff, #c13584, #6a0dad);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.following,
+.contact-bar,
+.address {
+  width: 25%;
+  margin-top: 1rem;
+}
+
+/* Styling for social media icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons i {
+  gap: 15px; 
+  padding: 10px 0;
+  font-size: 24px;
+  color: #333; 
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: #e4405f; 
+}
+
+.fa-facebook:hover {
+  color: #1877f2; 
+}
+
+.fa-youtube:hover {
+  color: #ff0000; 
+}
+.fa-linkedin:hover {
+  color: #0a66c2; 
+}
+
+.fa-discord:hover {
+  color: #5865f2;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us h4 {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.address {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  height: 20%;
+  position: absolute;
+  bottom: 1rem;
+  right: 40%;
+}
+
+.profile {
+  position: relative;
+}
+
+#profile-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.profile-list div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.profile-list div:hover {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,28 @@
+main {
+  min-height: calc(100vh - (5rem + 10rem));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a0dad, #c13584, #e2aaff);
+  padding: 20px;
+  gap: 1rem;
+}
+
+.about-us {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: #007bff;
+}
+
+.about-us p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
